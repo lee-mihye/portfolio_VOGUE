@@ -1,0 +1,69 @@
+@charset "utf-8";
+/* mediaQuery.css - 미디어쿼리 CSS */
+
+
+/* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
+@media all and (min-width:692px) and (max-width:1023px) {
+    .text {
+        font-size: 1.7rem;
+    }
+}
+
+
+@media all and (min-width:500px) and (max-width:691px) {
+    .text {
+        font-size: 1.5rem;
+    }
+
+    .mt {
+        margin-top: 250px;
+    }
+}
+
+
+/* 모바일 (해상도 500px 이하)*/
+@media all and (max-width:500px) {
+    .text {
+        font-size: 1rem;
+    }
+
+    /*해더크기 줄임*/
+    header {
+        height: 60px;
+    }
+    .mt {margin-top: 60px;}
+
+    /*햄버거 보이기*/
+    #ham {
+        display: block;
+    }
+    #ham:hover{
+        color: #ff0000;
+    }
+    /*sns, gnb 숨김*/
+    .sns,
+    .gnb li {
+        display: none;
+    }
+
+    /*로고 이미지*/
+    header .logo img {
+        position: absolute;
+        width: 150px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    /*검색버튼*/
+    .Magnifier {
+    position: absolute;
+    top: 50%;
+    right:10px;
+    transform: translateY(-50%);
+    }
+    footer .logo img{
+        width: 50%;
+    }
+}
+/*미디어쿼리*/

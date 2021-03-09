@@ -1,0 +1,63 @@
+@charset "utf-8";
+/* main.css - 메인페이지 CSS */
+
+/*파일 merging(합치기)*/
+@import url(reset.css);
+@import url(core.css);
+@import url(common.css);
+
+
+/*메인 페이지 전용 디자인*/
+/*배너영역*/
+
+.ban img {
+    display: block;
+    max-width: 100%;
+}
+
+
+
+
+/*컨텐츠영역*/
+.contlist {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+.contlist li {
+    width: 33.33%;
+}
+
+.contlist img {
+    max-width: 100%;
+    display: block;
+}
+
+/*동영상 영역*/
+video{width: 100%;}
+height
+.video{
+    background-color: #000; 
+}
+
+.video_box{
+    position: relative;
+    width: 100%;
+}
+/*비율박스 적용하기!*/
+.video_box::before{
+    content: '';
+    display: block;
+    padding-top: 56.25%;/*박스크기를 padding이 만들어줌*/
+}
+
+/*비율유지 속박스*/
+.ibx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+}
